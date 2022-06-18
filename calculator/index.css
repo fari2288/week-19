@@ -2,15 +2,18 @@
     display: flex;
     justify-content: center;
 }
+
 .value1,
 .value2 {
 
     width: 100px;
     height: 50px;
-    border-radius: 10px;margin: 10px;
+    border-radius: 10px;
+    margin: 10px;
     border-style: none;
     border: 1px solid pink;
 }
+
 .calculator {
     display: flex;
     justify-content: center;
@@ -21,16 +24,19 @@
     border: 1px solid pink;
     border-radius: 30px;
 }
-.calculator__inputs{
+
+.calculator__inputs {
     display: flex;
     flex-direction: column;
 }
-.calculator__result{
+
+.calculator__result {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
 }
+
 .result {
     border: 1px solid rgb(139, 189, 199);
     height: 50px;

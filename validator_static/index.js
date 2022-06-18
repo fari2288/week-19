@@ -13,7 +13,6 @@ class Validator {
             isDomain = true;
         return isDomain;
     }
-
     date = document.querySelector('#date').value;
     static isDate(date) {
         let isDate = false;
@@ -33,19 +32,18 @@ class Validator {
 
 document.querySelector('button').addEventListener('click', () => {
     if (Validator.isEmail(email),
-    Validator.isDomain(domain),
-    Validator.isDate(date),
-    Validator.isPhone(phone)
-    ){
+        Validator.isDomain(domain),
+        Validator.isDate(date),
+        Validator.isPhone(phone)
+    ) {
+        console.log(Validator.isEmail(email));
+        console.log(Validator.isDomain(domain));
+        console.log(Validator.isDate(date));
+        console.log(Validator.isPhone(phone))
+    } else {
         console.log(Validator.isEmail(email));
         console.log(Validator.isDomain(domain));
         console.log(Validator.isDate(date));
         console.log(Validator.isPhone(phone))
     }
-    else
-    {
-        console.log(Validator.isEmail(email));
-        console.log(Validator.isDomain(domain));
-        console.log(Validator.isDate(date));
-        console.log(Validator.isPhone(phone))}
 })
