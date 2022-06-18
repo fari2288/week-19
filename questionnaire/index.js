@@ -14,7 +14,7 @@ button_ok.addEventListener('click', (evt) => {
 
     const nickname = document.querySelector('#nickname').value;
     const breed = document.querySelector('#breed').value;
-    const gender = document.querySelector('input[name="gender"]:checked') ? .value;
+    const gender = document.querySelector('input[name="gender"]:checked')?.value;
 
     let food = [];
     const checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
